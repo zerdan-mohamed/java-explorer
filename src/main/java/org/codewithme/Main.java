@@ -1,4 +1,4 @@
-package org.features;
+package org.codewithme;
 
 public class Main {
     public static void main(String[] args) {
