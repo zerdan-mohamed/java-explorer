@@ -1,6 +1,6 @@
 package org.codewithme.streams;
 
-import org.codewithme.objects.Person;
+import org.codewithme.models.Person;
 
 import java.util.Comparator;
 import java.util.List;
