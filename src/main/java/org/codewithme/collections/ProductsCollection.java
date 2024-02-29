@@ -30,7 +30,6 @@ public class ProductsCollection {
         }
         // products.removeIf(product -> product.price() > 1000);
 
-
         System.out.println(" ### ### ### ");
         System.out.println(products);
 
