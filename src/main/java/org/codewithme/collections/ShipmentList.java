@@ -14,13 +14,13 @@ public class ShipmentList implements Iterable<Product> {
     //  - good general purpose implementation
     //  - use as a default
     //  - CPU cache sympathetic
-    //  - performance complexity: get -> O(1), add -> O(N), contains -> O(N), next -> O(1), remove -> O(N)
+    //  - performance complexity: get -> O(1), add -> O(1|N), contains -> O(N), remove -> O(1|N)
 
     // LinkedList :
     //  - worse performance in most cases
     //  - use when adding elements at start
     //  - use when adding/removing a lot
-    //  - performance complexity : get -> O(N), add -> O(1), contains -> O(N), next -> O(1), remove -> O(N)
+    //  - performance complexity : get -> O(N), add -> O(1|N), contains -> O(N), remove -> O(1|N)
 
     private static final int MISSING_PRODUCT = -1;
     private static final int CHEAP_MAX_PRICE = 200;

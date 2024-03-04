@@ -31,14 +31,14 @@ public class ViewsOverMaps {
         // unsupported operation: exception because we can't add a key without adding a value and vice versa
         // ids.add(5);
 
-        var products = idToBook.values();
-        System.out.println(products);
+        var books = idToBook.values();
+        System.out.println(books);
         System.out.println(idToBook);
         System.out.println(" ### ### ### \n");
 
-        products.remove(book3);
+        books.remove(book3);
 
-        System.out.println(products);
+        System.out.println(books);
         System.out.println(idToBook);
         System.out.println(" ### ### ### \n");
 

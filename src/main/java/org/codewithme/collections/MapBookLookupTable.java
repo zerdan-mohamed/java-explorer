@@ -19,6 +19,14 @@ public class MapBookLookupTable implements BookLookupTable {
         books.put(id, bookToAdd);
     }
 
+    public void addBook2(Book bookToAdd) {
+        var id = bookToAdd.id();
+
+        if (books.putIfAbsent(id, bookToAdd) != null) {
+            throw new IllegalArgumentException("Unable to add book, duplicate id for: " + bookToAdd);
+        }
+    }
+
     @Override
     public Book lookupById(int id) {
         return books.get(id);
